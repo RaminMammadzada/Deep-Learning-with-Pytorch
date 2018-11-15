@@ -1,3 +1,6 @@
+# This is the solution given by the course moderators.
+# It may differ that my own solution. It's been added here just to be reference.
+
 import numpy as np
 
 def softmax(L):

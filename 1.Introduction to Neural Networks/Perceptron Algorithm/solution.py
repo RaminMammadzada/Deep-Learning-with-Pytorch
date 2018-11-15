@@ -1,3 +1,6 @@
+# This is the solution given by the course moderators.
+# It may differ that my own solution. It's been added here just to be reference.
+
 def perceptronStep(X, y, W, b, learn_rate = 0.01):
     for i in range(len(X)):
         y_hat = prediction(X[i],W,b)
