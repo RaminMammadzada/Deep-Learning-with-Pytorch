@@ -1,13 +1,13 @@
 import numpy as np
 
-# Write a function that takes as input a list of numbers, and returns
+# QUIZ: Write a function that takes as input a list of numbers, and returns
 # the list of values given by the softmax function.
 
 
 # calculate the sum of the exponential of each score
 def sumOfExp(L):
-    # input: L - the list of lineer function scores
-    # output: the sum of the exponentials of each scores
+    # input: L - list, the list of lineer function scores
+    # output: sum - integer, the sum of the exponentials of each scores
 
     sum = 0
     for score in L:
@@ -16,8 +16,8 @@ def sumOfExp(L):
 
 # calculates the probability of the score
 def probability(score,L):
-    # input: score - the lineer function score
-    #        L - the list of lineer function scores
+    # input: score - float, the lineer function score
+    #        L - list, the list of lineer function scores
     # output: prob - the probability of the score
     
     prob = np.exp(score) / sumOfExp(L)
@@ -25,8 +25,8 @@ def probability(score,L):
 
 # gives the probabilities of the scores as a list
 def softmax(L):
-    # input: L - list of lineer function scores
-    # output: probs - list of probabilites of the scores in the list L
+    # input: L - list, the list of lineer function scores
+    # output: probs - list, the list of probabilites of the scores in the list L
     
     probs = []
     sizeOfListOfScores = len(L)
